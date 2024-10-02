@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="insertMenu">
+    INSERT INTO TBL_MENU
+        (MENU_NAME, MENU_PRICE, CATEGORY_CODE, ORDERABLE_STATUS)
+        VALUES
+        (?, ?, ?, ?)
+    </entry>
+
+    <entry key="updateMenu">
+        UPDATE TBL_MENU
+            SET MENU_NAME = ?, MENU_PRICE = ?
+        WHERE
+            MENU_CODE = ?
+    </entry>
+
+    <entry key="deleteMenu">
+        DELETE FROM TBL_MENU
+        WHERE
+            MENU_CODE = ?
+    </entry>
+</properties>
