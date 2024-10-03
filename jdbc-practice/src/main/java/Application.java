@@ -63,7 +63,8 @@ public class Application {
                 MenuDTO menuDTO = new MenuDTO();
 
                 // 가지고 온 테이블 데이터 값을 MenuDTO 필드값에 설정
-                // 설정하기 위한 set필드명(rset 이 가지고 있는 데이터중 get자료형(컬럼명))
+                // rset이 가지고 온 데이터 값들을 get으로 추출하여
+                // menuDTO 필드값에 각각 set으로 설정
                 menuDTO.setMenuCode(rset.getInt("MENU_CODE"));
                 menuDTO.setMenuName(rset.getString("MENU_NAME"));
                 menuDTO.setMenuPrice(rset.getInt("MENU_PRICE"));
