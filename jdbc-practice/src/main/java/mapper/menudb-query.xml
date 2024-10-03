@@ -7,4 +7,23 @@
         FROM
             TBL_MENU
     </entry>
+
+    <entry key="insertMenu">
+        INSERT INTO TBL_MENU(MENU_NAME, MENU_PRICE, CATEGORY_CODE, ORDERABLE_STATUS)
+        VALUES(?, ?, ?, ?)
+    </entry>
+
+    <entry key="updateMenu">
+        UPDATE TBL_MENU
+            SET MENU_NAME = ?, MENU_PRICE = ?, CATEGORY_CODE = ?, ORDERABLE_STATUS = ?
+        WHERE
+            MENU_CODE = ?
+    </entry>
+
+    <entry key="deleteMenu">
+        DELETE FROM TBL_MENU
+        WHERE
+            MENU_CODE = ?
+
+    </entry>
 </properties>
