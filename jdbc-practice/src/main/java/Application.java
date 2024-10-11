@@ -46,7 +46,7 @@ public class Application {
             String query = prop.getProperty("selectMenuAll");
 
             // 주어진 쿼리문을 사용하여 PreparedStatement 객체를 생성한 상태
-            // (연결 다리에 올려두어 실해할 준비가 된 상태)
+            // (연결 다리에 올려두어 실행할 준비가 된 상태)
             pstmt = con.prepareStatement(query);
 
             // 쿼리문을 연결다리에 올려둔 뒤 그 쿼리문을 실행
